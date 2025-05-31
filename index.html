@@ -114,14 +114,15 @@
 
   <section>
     <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="text" placeholder="Product Needed" required />
-      <input type="text" placeholder="Country" required />
-      <textarea placeholder="Message"></textarea>
+    <form action="https://formspree.io/f/mblyrpdk" method="POST">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="product" placeholder="Product Needed" required />
+      <input type="text" name="country" placeholder="Country" required />
+      <textarea name="message" placeholder="Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
+
     <p>Email: starboundexports@gmail.com</p>
     <p>WhatsApp: +91-9076494963</p>
     <p>Office: Mumbai, India</p>
