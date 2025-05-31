@@ -97,6 +97,13 @@
       cursor: pointer;
     }
 
+    #formResponse {
+      margin-top: 1rem;
+      color: green;
+      display: none;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -151,13 +158,14 @@
 
   <section>
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mblyrpdk" method="POST">
+    <form id="contactForm">
       <input type="text" name="name" placeholder="Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <input type="text" name="product" placeholder="Product Needed" required />
       <input type="text" name="country" placeholder="Country" required />
       <textarea name="message" placeholder="Message"></textarea>
       <button type="submit">Send Message</button>
+      <p id="formResponse">Thank you! Your message has been sent.</p>
     </form>
 
     <p>Email: starboundexports@gmail.com</p>
@@ -168,5 +176,30 @@
   <footer>
     <p>&copy; 2025 Starbound Export. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const data = new FormData(form);
+      const responseMsg = document.getElementById('formResponse');
+
+      fetch("https://formspree.io/f/mblyrpdk", {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          responseMsg.style.display = 'block';
+        } else {
+          alert("There was a problem sending your message. Please try again.");
+        }
+      }).catch(error => {
+        alert("Something went wrong. Please check your internet or try again later.");
+      });
+    });
+  </script>
 </body>
 </html>
