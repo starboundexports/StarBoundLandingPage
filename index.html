@@ -11,49 +11,84 @@
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
+
     body {
       line-height: 1.6;
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background: #004c99;
       color: white;
-      padding: 2rem;
+      padding: 1.5rem 1rem;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      position: relative;
     }
-    header img.logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 60px; /* Adjust based on your design */
+
+    .logo {
+      height: 60px;
+      margin-bottom: 1rem;
     }
+
+    .header-text h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 600px) {
+      .header-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+      }
+
+      .logo {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+      }
+
+      .header-text h1 {
+        font-size: 2rem;
+      }
+    }
+
     section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       color: #004c99;
       margin-bottom: 1rem;
     }
+
     .how-it-works-step, .service-item {
       background: #fff;
       padding: 1rem;
       margin-bottom: 1rem;
       border-left: 5px solid #004c99;
     }
+
     form {
       display: flex;
       flex-direction: column;
     }
+
     form input, form textarea {
       margin-bottom: 1rem;
       padding: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     form button {
       background: #004c99;
       color: white;
@@ -61,6 +96,7 @@
       padding: 0.7rem;
       cursor: pointer;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -71,13 +107,14 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Starbound Export Logo" class="logo" />
-    <h1>Elevate Your Business Beyond the Horizon</h1>
-    <p>Your Trusted Export Partner in India</p>
+    <div class="header-container">
+      <img src="logo.png" alt="Starbound Export Logo" class="logo" />
+      <div class="header-text">
+        <h1>Elevate Your Business Beyond the Horizon</h1>
+        <p>Your Trusted Export Partner in India</p>
+      </div>
+    </div>
   </header>
-
-  <!-- rest of your code remains the same -->
-
 
   <section>
     <h2>Our Services</h2>
@@ -131,6 +168,5 @@
   <footer>
     <p>&copy; 2025 Starbound Export. All rights reserved.</p>
   </footer>
-  
 </body>
 </html>
