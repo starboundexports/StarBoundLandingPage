@@ -1,44 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Coming Soon">
-    <meta name="description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://common-coming-soon-page.netlify.app/">
-    <meta property="og:title" content="Coming Soon">
-    <meta property="og:description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <meta property="og:image" content="https://common-coming-soon-page.netlify.app/assets/images/og/og-image.jpg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://common-coming-soon-page.netlify.app/">
-    <meta property="twitter:title" content="Coming Soon">
-    <meta property="twitter:description" content="In the meantime, Stay tuned. We are almost ready to launch.">
-    <meta property="twitter:image" content="https://common-coming-soon-page.netlify.app/assets/images/og/og-image.jpg">
-    <!-- Favicon Link -->
-	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starbound Export</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004c99;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #004c99;
+      margin-bottom: 1rem;
+    }
+    .how-it-works-step, .service-item {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #004c99;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #004c99;
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #004c99;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <section class="banner">
-        <div class="container">
-            <h1 class="banner__title">Coming Soon</h1>
-            <p class="banner__text">In the meantime, Stay tuned. We are almost ready to launch.</p>
-        </div>
-    </section>
+  <header>
+    <h1>Elevate Your Business Beyond the Horizon</h1>
+    <p>Your Trusted Export Partner in India</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <p>We help international businesses source quality products from India efficiently and transparently.</p>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="how-it-works-step">1. Share your product requirement</div>
+    <div class="how-it-works-step">2. We research & share supplier options</div>
+    <div class="how-it-works-step">3. You finalize vendor & pricing</div>
+    <div class="how-it-works-step">4. We handle logistics & documentation</div>
+    <div class="how-it-works-step">5. Receive your shipment hassle-free</div>
+  </section>
+
+  <section>
+    <h2>About Us</h2>
+    <p>Starbound Export was started to simplify sourcing from India for global buyers. We bridge the gap between reliable Indian manufacturers and international importers.</p>
+    <ul>
+      <li>Local presence & strong supplier network</li>
+      <li>Quality checks & price negotiation</li>
+      <li>Transparent processes & communication</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Services in Detail</h2>
+    <div class="service-item">Sourcing as per your requirement</div>
+    <div class="service-item">Price negotiation & quality assurance</div>
+    <div class="service-item">End-to-end logistics coordination</div>
+    <div class="service-item">Documentation & compliance support</div>
+    <div class="service-item">Smooth communication throughout</div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Product Needed" required />
+      <input type="text" placeholder="Country" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: contact@starboundexport.com</p>
+    <p>WhatsApp: +91-XXXXXXXXXX</p>
+    <p>Office: Mumbai, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Starbound Export. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Thank you! We'll get back to you shortly.");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
