@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,46 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starbound Export</title>
   <style>
-    * {{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
-    }}
-    body {{
+    }
+
+    body {
       line-height: 1.6;
       background: #f9f9f9;
       color: #333;
-    }}
-    header {{
+    }
+
+    header {
       background: #004c99;
       color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }}
-    header img.logo {{
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 60px;
-    }}
-    .header-container {{
+      padding: 1.5rem 1rem;
+    }
+
+    .header-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       justify-content: space-between;
-    }}
-    .header-left {{
+    }
+
+    .header-left {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }}
-    .header-right {{
+    }
+
+    .logo {
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .header-text h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-right {
       margin-top: 1rem;
-    }}
-    .download-btn {{
+    }
+
+    .download-btn {
       padding: 8px 16px;
       background-color: white;
       color: #004c99;
@@ -54,87 +61,89 @@
       font-weight: bold;
       cursor: pointer;
       font-size: 0.9rem;
-    }}
-    .download-btn:hover {{
+    }
+
+    .download-btn:hover {
       background-color: #e6f0ff;
-    }}
-    @media (min-width: 768px) {{
-      .header-container {{
+    }
+
+    @media (min-width: 768px) {
+      .header-container {
         flex-direction: row;
         text-align: left;
         align-items: center;
-      }}
-      .header-left {{
+      }
+
+      .header-left {
         flex-direction: row;
         align-items: center;
-      }}
-      .logo {{
+      }
+
+      .logo {
         margin-bottom: 0;
         margin-right: 1.5rem;
-      }}
-      .header-right {{
+      }
+
+      .header-right {
         margin-top: 0;
-      }}
-    }}
-    section {{
+      }
+
+      .header-text h1 {
+        font-size: 2rem;
+      }
+    }
+
+    section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
-    }}
-    h2 {{
+    }
+
+    h2 {
       color: #004c99;
       margin-bottom: 1rem;
-    }}
-    .how-it-works-step, .service-item {{
+    }
+
+    .how-it-works-step, .service-item {
       background: #fff;
       padding: 1rem;
       margin-bottom: 1rem;
       border-left: 5px solid #004c99;
-    }}
-    form {{
+    }
+
+    form {
       display: flex;
       flex-direction: column;
-    }}
-    form input, form textarea {{
+    }
+
+    form input, form textarea {
       margin-bottom: 1rem;
       padding: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 5px;
-    }}
-    form button {{
+    }
+
+    form button {
       background: #004c99;
       color: white;
       border: none;
       padding: 0.7rem;
       cursor: pointer;
-    }}
-    .faq-item {{
-      background: #fff;
-      padding: 1rem;
-      margin: 0.5rem 0;
-      border-left: 5px solid #004c99;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }}
-    .faq-item h3 {{
-      margin: 0;
-      font-size: 1rem;
-      color: #004c99;
-    }}
-    .faq-item p {{
-      margin-top: 0.5rem;
+    }
+
+    #formResponse {
+      margin-top: 1rem;
+      color: green;
       display: none;
-      color: #333;
-    }}
-    .faq-item.active p {{
-      display: block;
-    }}
-    footer {{
+      font-weight: bold;
+    }
+
+    footer {
       text-align: center;
       padding: 2rem;
       background: #004c99;
       color: white;
-    }}
+    }
   </style>
 </head>
 <body>
@@ -149,55 +158,60 @@
       </div>
       <div class="header-right">
         <a href="Starbound_Export_Brochure_Styled.pdf" download>
-          <button class="download-btn">Download Brochure</button>
+          <button class="download-btn">📄 Download Brochure</button>
         </a>
       </div>
     </div>
   </header>
 
   <section>
+    <h2>Our Services</h2>
+    <p>We help international businesses source quality products from India efficiently and transparently.</p>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="how-it-works-step">1. Share your product requirement</div>
+    <div class="how-it-works-step">2. We research & share supplier options</div>
+    <div class="how-it-works-step">3. You finalize vendor & pricing</div>
+    <div class="how-it-works-step">4. We handle logistics & documentation</div>
+    <div class="how-it-works-step">5. Receive your shipment hassle-free</div>
+  </section>
+
+  <section>
+    <h2>About Us</h2>
+    <p>Starbound Export was started to simplify sourcing from India for global buyers. We bridge the gap between reliable Indian manufacturers and international importers.</p>
+    <ul>
+      <li>Local presence & strong supplier network</li>
+      <li>Quality checks & price negotiation</li>
+      <li>Transparent processes & communication</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Services in Detail</h2>
+    <div class="service-item">Sourcing as per your requirement</div>
+    <div class="service-item">Price negotiation & quality assurance</div>
+    <div class="service-item">End-to-end logistics coordination</div>
+    <div class="service-item">Documentation & compliance support</div>
+    <div class="service-item">Smooth communication throughout</div>
+  </section>
+
+  <section>
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mblyrpdk" method="POST">
+    <form id="contactForm">
       <input type="text" name="name" placeholder="Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <input type="text" name="product" placeholder="Product Needed" required />
       <input type="text" name="country" placeholder="Country" required />
       <textarea name="message" placeholder="Message"></textarea>
       <button type="submit">Send Message</button>
+      <p id="formResponse">Thank you! Your message has been sent.</p>
     </form>
+
     <p>Email: starboundexports@gmail.com</p>
     <p>WhatsApp: +91-9076494963</p>
     <p>Office: Mumbai, India</p>
-  </section>
-
-  <section>
-    <h2>Frequently Asked Questions (FAQs)</h2>
-    <div class="faq">
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>What products do you deal in?</h3>
-        <p>We work across categories — based on your requirements, we find verified Indian suppliers.</p>
-      </div>
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>What is your minimum order quantity (MOQ)?</h3>
-        <p>It depends on the product; we’ll confirm supplier MOQs for each inquiry.</p>
-      </div>
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>Do you stock products?</h3>
-        <p>No, we facilitate sourcing from manufacturers across India.</p>
-      </div>
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>Can you manage quality inspection?</h3>
-        <p>Yes, we handle quality checks, supplier verification, and even sampling.</p>
-      </div>
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>Do you provide export documentation?</h3>
-        <p>Yes — from invoice and packing list to shipping documents and certificates.</p>
-      </div>
-      <div class="faq-item" onclick="toggleFAQ(this)">
-        <h3>Where are you based?</h3>
-        <p>Mumbai, India. We work PAN-India based on sourcing needs.</p>
-      </div>
-    </div>
   </section>
 
   <footer>
@@ -205,9 +219,28 @@
   </footer>
 
   <script>
-    function toggleFAQ(element) {{
-      element.classList.toggle("active");
-    }}
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const data = new FormData(form);
+      const responseMsg = document.getElementById('formResponse');
+
+      fetch("https://formspree.io/f/mblyrpdk", {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          responseMsg.style.display = 'block';
+        } else {
+          alert("There was a problem sending your message. Please try again.");
+        }
+      }).catch(error => {
+        alert("Something went wrong. Please check your internet or try again later.");
+      });
+    });
   </script>
 </body>
 </html>
