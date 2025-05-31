@@ -21,6 +21,13 @@
       color: white;
       padding: 2rem;
       text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 60px; /* Adjust based on your design */
     }
     section {
       padding: 2rem;
@@ -64,9 +71,13 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Starbound Export Logo" class="logo" />
     <h1>Elevate Your Business Beyond the Horizon</h1>
     <p>Your Trusted Export Partner in India</p>
   </header>
+
+  <!-- rest of your code remains the same -->
+
 
   <section>
     <h2>Our Services</h2>
@@ -111,8 +122,8 @@
       <textarea placeholder="Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p>Email: contact@starboundexport.com</p>
-    <p>WhatsApp: +91-XXXXXXXXXX</p>
+    <p>Email: starboundexports@gmail.com</p>
+    <p>WhatsApp: +91-9076494963</p>
     <p>Office: Mumbai, India</p>
   </section>
 
@@ -123,7 +134,7 @@
   <script>
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("Thank you! We'll get back to you shortly.");
+      alert("ALERT :  Email or Whatsapp this feature is coming soon....");
       this.reset();
     });
   </script>
